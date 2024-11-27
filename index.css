@@ -1,0 +1,196 @@
+/* Reset default margin and padding */
+body,
+ul {
+  margin: 1qem;
+  padding: 0;
+}
+
+/* Container styles */
+#container {
+  border-radius: 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  background-color: #9ac6b8;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+/* Logo styles */
+#logo img {
+  width: auto;
+  border: 2px solid #eaffef;
+  border-radius: 5px;
+  padding: 4px;
+  margin-left: 12em;
+  max-height: 8em;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 1em;
+  padding: 0 1em;
+}
+
+nav li a {
+  font-size: 4em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #07867c;
+  transition: color 0.3s ease;
+}
+
+nav li a:hover {
+  color: #008cf1;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    /* Navigation styles for smaller screens to help menu items stack and not overflow*/
+    nav ul {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items vertically */
+    }
+
+    nav li {
+      margin: 10px 0; /* Add spacing between stacked items */
+      text-align: center; /* Center align the items */
+    }
+  }
+
+/* Banner styles */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("assets/download.jpeg");
+  max-width: 110em;
+  height: 10em;
+  border-radius: 35px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-left: 1em;
+  margin-right: 1em;
+  border: 0.5em solid #d2f7f4;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  margin-bottom: 1em;;
+}
+
+.banner-content {
+  text-align: center;
+  color: #d2f7f4;
+  font-weight: bold;
+  font-size: 1.4em;
+  font-family: "Verdana", sans-serif;
+  padding: 2px;
+  width: 100em;
+}
+
+/* Columns styles */
+
+h2  {
+    font-family: "Geneva", Tahoma, sans-serif;
+    font-size: 2em;
+    padding: 0.1em;
+}
+.columns-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+main {
+    background-image: url('assets/Forest.png');
+}
+body {background-image: url("assets/Forest.png");}
+
+#col1,
+#col2,
+#col3 {
+  font-size: small;
+  font-family: "Verdana",serif;
+  color: #d2f7f4;
+  border: solid 8px silver;
+  border-radius: 35px;
+  margin: 10px;
+  padding: 20px;
+  flex-basis: calc(33.33% - 50px); /* Ensure equal width for columns */
+  flex-grow: 1;
+}
+
+.columns-container img {
+  border: 5px solid silver;
+  border-radius: 35px;
+  max-width: 100%;
+  height: auto;
+  margin-right: 20px;
+  float: left;
+  shape-outside: border-box; /* Text wraps around the image */
+  shape-margin: 25px; /* Adjust as needed */
+}
+
+.columns-container p {
+  text-align: justify;
+}
+
+/* hover effect for columns */
+#col1:hover,
+#col2:hover,
+#col3:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+  transition: transform 0.3s ease; /* transition effect */
+}
+
+/* Footer styles */
+footer {
+    padding: 20px;
+    color: #fff; 
+  }
+
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Footer column 1 styles */
+  .footer-col1 {
+    flex: 1;
+  }
+
+  .footer-col1 img {
+    max-width: 3em; /* Adjust size as needed */
+  }
+
+  /* Footer column 2 styles */
+.footer-col2 {
+    flex: 2;
+    margin-left: 20em; /* Add some spacing between columns */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-col2 p {
+    font-size: 0.9em; /* Adjust font size */
+  }
+
+  .footer-col2 p .copyright {
+    text-align: left; /* Align to left */
+  }
+
+  .footer-col2 p .company-info {
+    text-align: right; /* Align to right */
+  }
+
+
